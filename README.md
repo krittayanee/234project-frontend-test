@@ -1,2 +1,3 @@
 # 234project-frontend-test
-use katalon program by using 34.217.30.64:8086
+use katalon program by using http://34.213.239.153:8086/  \
+I use my friend's link, since my deployed frontend can't load database
