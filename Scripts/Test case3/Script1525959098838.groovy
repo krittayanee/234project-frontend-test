@@ -24,6 +24,20 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://34.213.239.153:8086/')
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('http://34.213.239.153:8086/')
+
+WebUI.setText(findTestObject('Page_ProjectBackend (7)/input_username'), 'asdf')
+
+WebUI.setText(findTestObject('Page_ProjectBackend (7)/input_password'), 'wert')
+
+WebUI.click(findTestObject('Page_ProjectBackend (7)/button_Login'))
+
+WebUI.click(findTestObject('Page_ProjectBackend (7)/label_Usernamepassword is inco'))
+
+WebUI.closeBrowser()
+
 WebUI.setText(findTestObject('Page_ProjectBackend (3)/input_username'), '')
 
 WebUI.delay(3)

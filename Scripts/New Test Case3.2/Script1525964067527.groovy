@@ -24,17 +24,11 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://34.213.239.153:8086/')
 
-WebUI.click(findTestObject('Page_ProjectBackend (6)/h1_SE 234 Project'))
+WebUI.setText(findTestObject('Page_ProjectBackend (9)/input_username'), 'adsg')
 
-WebUI.click(findTestObject('Page_ProjectBackend (6)/p_This is the mock app for the'))
+WebUI.click(findTestObject('Page_ProjectBackend (9)/button_Login'))
 
-WebUI.click(findTestObject('Page_ProjectBackend (6)/h2_Login'))
-
-WebUI.click(findTestObject('Page_ProjectBackend (6)/label_Username'))
-
-WebUI.click(findTestObject('Page_ProjectBackend (6)/label_Password'))
-
-WebUI.click(findTestObject('Page_ProjectBackend (6)/button_Login'))
+WebUI.click(findTestObject('Page_ProjectBackend (9)/label_Password is required'))
 
 WebUI.closeBrowser()
 
