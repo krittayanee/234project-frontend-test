@@ -24,7 +24,23 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://34.213.239.153:8086/')
 
-WebUI.delay(4)
+WebUI.setText(findTestObject('Page_ProjectBackend (1)/input_username'), 'admin')
+
+WebUI.delay(2)
+
+WebUI.setText(findTestObject('Page_ProjectBackend (1)/input_password'), 'admin')
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Page_ProjectBackend (1)/button_Login'))
+
+WebUI.click(findTestObject('Page_ProjectBackend (1)/a_Products'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Page_ProjectBackend (1)/a_Total Transaction'))
+
+WebUI.delay(2)
 
 WebUI.closeBrowser()
 
