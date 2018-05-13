@@ -20,21 +20,3 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('http://34.213.239.153:8088/')
-
-WebUI.click(findTestObject('Page_ProjectBackend (6)/h1_SE 234 Project'))
-
-WebUI.click(findTestObject('Page_ProjectBackend (6)/p_This is the mock app for the'))
-
-WebUI.verifyElementText(findTestObject('Page_ProjectBackend (6)/h2_Login'), 'Login')
-
-WebUI.verifyElementText(findTestObject('Page_ProjectBackend (6)/label_Username'), 'Username')
-
-WebUI.verifyElementText(findTestObject('Page_ProjectBackend (6)/label_Password'), 'Password')
-
-WebUI.click(findTestObject('Page_ProjectBackend (6)/button_Login'))
-
-WebUI.closeBrowser()
-

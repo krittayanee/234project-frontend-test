@@ -24,17 +24,25 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://34.213.239.153:8088/')
 
-WebUI.click(findTestObject('Page_ProjectBackend (6)/h1_SE 234 Project'))
+WebUI.setText(findTestObject('Page_ProjectBackend (21)/input_username'), 'user')
 
-WebUI.click(findTestObject('Page_ProjectBackend (6)/p_This is the mock app for the'))
+WebUI.setText(findTestObject('Page_ProjectBackend (21)/input_password'), 'user')
 
-WebUI.verifyElementText(findTestObject('Page_ProjectBackend (6)/h2_Login'), 'Login')
+WebUI.click(findTestObject('Page_ProjectBackend (21)/button_Login'))
 
-WebUI.verifyElementText(findTestObject('Page_ProjectBackend (6)/label_Username'), 'Username')
+WebUI.click(findTestObject('Page_ProjectBackend (21)/button_add to cart'))
 
-WebUI.verifyElementText(findTestObject('Page_ProjectBackend (6)/label_Password'), 'Password')
+WebUI.click(findTestObject('Page_ProjectBackend (21)/a_Carts            1'))
 
-WebUI.click(findTestObject('Page_ProjectBackend (6)/button_Login'))
+WebUI.verifyElementText(findTestObject('Page_ProjectBackend (21)/td_Garden'), 'Garden')
+
+WebUI.verifyElementText(findTestObject('Page_ProjectBackend (21)/td_20000 THB'), '20,000 THB')
+
+WebUI.verifyElementText(findTestObject('Page_ProjectBackend (21)/p_Total price  20000 THB'), 'Total price: 20,000 THB')
+
+WebUI.setText(findTestObject('Page_ProjectBackend (21)/input_amount'), '5')
+
+WebUI.verifyElementText(findTestObject('Page_ProjectBackend (21)/p_Total price  100000 THB'), 'Total price: 100,000 THB')
 
 WebUI.closeBrowser()
 

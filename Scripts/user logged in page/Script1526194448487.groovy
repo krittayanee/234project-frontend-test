@@ -24,17 +24,21 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://34.213.239.153:8088/')
 
-WebUI.click(findTestObject('Page_ProjectBackend (6)/h1_SE 234 Project'))
+WebUI.setText(findTestObject('Page_ProjectBackend (18)/input_username'), 'user')
 
-WebUI.click(findTestObject('Page_ProjectBackend (6)/p_This is the mock app for the'))
+WebUI.setText(findTestObject('Page_ProjectBackend (18)/input_password'), 'user')
 
-WebUI.verifyElementText(findTestObject('Page_ProjectBackend (6)/h2_Login'), 'Login')
+WebUI.click(findTestObject('Page_ProjectBackend (18)/button_Login'))
 
-WebUI.verifyElementText(findTestObject('Page_ProjectBackend (6)/label_Username'), 'Username')
+WebUI.verifyElementText(findTestObject('Page_ProjectBackend (18)/h5_Garden'), 'Garden')
 
-WebUI.verifyElementText(findTestObject('Page_ProjectBackend (6)/label_Password'), 'Password')
+WebUI.verifyElementText(findTestObject('Page_ProjectBackend (18)/h5_Banana'), 'Banana')
 
-WebUI.click(findTestObject('Page_ProjectBackend (6)/button_Login'))
+WebUI.verifyElementText(findTestObject('Page_ProjectBackend (18)/h5_Orange'), 'Orange')
+
+WebUI.verifyElementText(findTestObject('Page_ProjectBackend (18)/h5_Papaya'), 'Papaya')
+
+WebUI.verifyElementText(findTestObject('Page_ProjectBackend (18)/h5_Rambutan'), 'Rambutan')
 
 WebUI.closeBrowser()
 

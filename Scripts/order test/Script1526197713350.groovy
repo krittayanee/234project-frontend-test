@@ -24,17 +24,31 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://34.213.239.153:8088/')
 
-WebUI.click(findTestObject('Page_ProjectBackend (6)/h1_SE 234 Project'))
+WebUI.setText(findTestObject('Page_ProjectBackend (22)/input_username'), 'user')
 
-WebUI.click(findTestObject('Page_ProjectBackend (6)/p_This is the mock app for the'))
+WebUI.setText(findTestObject('Page_ProjectBackend (22)/input_password'), 'user')
 
-WebUI.verifyElementText(findTestObject('Page_ProjectBackend (6)/h2_Login'), 'Login')
+WebUI.click(findTestObject('Page_ProjectBackend (22)/button_Login'))
 
-WebUI.verifyElementText(findTestObject('Page_ProjectBackend (6)/label_Username'), 'Username')
+WebUI.click(findTestObject('Page_ProjectBackend (22)/button_add to cart'))
 
-WebUI.verifyElementText(findTestObject('Page_ProjectBackend (6)/label_Password'), 'Password')
+WebUI.click(findTestObject('Page_ProjectBackend (22)/button_add to cart'))
 
-WebUI.click(findTestObject('Page_ProjectBackend (6)/button_Login'))
+WebUI.click(findTestObject('Page_ProjectBackend (22)/a_Carts            2'))
+
+WebUI.verifyElementText(findTestObject('Page_ProjectBackend (22)/td_Garden'), 'Garden')
+
+WebUI.verifyElementText(findTestObject('Page_ProjectBackend (22)/td_20000 THB'), '20,000 THB')
+
+WebUI.verifyElementText(findTestObject('Page_ProjectBackend (22)/td_Banana'), 'Banana')
+
+WebUI.verifyElementText(findTestObject('Page_ProjectBackend (22)/td_150 THB'), '150 THB')
+
+WebUI.verifyElementText(findTestObject('Page_ProjectBackend (22)/div_Total price  20150 THB'), 'Total price: 20,150 THB')
+
+WebUI.click(findTestObject('Page_ProjectBackend (22)/button_confirm'))
+
+WebUI.verifyElementText(findTestObject('Page_ProjectBackend (22)/div_Well done You successfully'), 'Well done! You successfully added the transaction.')
 
 WebUI.closeBrowser()
 

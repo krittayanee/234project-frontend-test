@@ -24,17 +24,43 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://34.213.239.153:8088/')
 
-WebUI.click(findTestObject('Page_ProjectBackend (6)/h1_SE 234 Project'))
+WebUI.openBrowser('')
 
-WebUI.click(findTestObject('Page_ProjectBackend (6)/p_This is the mock app for the'))
+WebUI.navigateToUrl('http://34.213.239.153:8088/')
 
-WebUI.verifyElementText(findTestObject('Page_ProjectBackend (6)/h2_Login'), 'Login')
+WebUI.setText(findTestObject('Page_ProjectBackend (7)/input_username'), 'asdf')
 
-WebUI.verifyElementText(findTestObject('Page_ProjectBackend (6)/label_Username'), 'Username')
+WebUI.setText(findTestObject('Page_ProjectBackend (7)/input_password'), 'wert')
 
-WebUI.verifyElementText(findTestObject('Page_ProjectBackend (6)/label_Password'), 'Password')
+WebUI.click(findTestObject('Page_ProjectBackend (7)/button_Login'))
 
-WebUI.click(findTestObject('Page_ProjectBackend (6)/button_Login'))
+WebUI.click(findTestObject('Page_ProjectBackend (7)/label_Usernamepassword is inco'))
+
+WebUI.closeBrowser()
+
+WebUI.setText(findTestObject('Page_ProjectBackend (3)/input_username'), '')
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('Page_ProjectBackend (3)/div_Password'))
+
+WebUI.delay(3)
+
+WebUI.setText(findTestObject('Page_ProjectBackend (3)/input_password'), '')
+
+WebUI.delay(3)
+
+WebUI.setText(findTestObject('Page_ProjectBackend (3)/input_username'), 'tytuyu')
+
+WebUI.delay(3)
+
+WebUI.setText(findTestObject('Page_ProjectBackend (3)/input_password'), 'fghjhk')
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('Page_ProjectBackend (3)/button_Login'))
+
+WebUI.delay(3)
 
 WebUI.closeBrowser()
 
