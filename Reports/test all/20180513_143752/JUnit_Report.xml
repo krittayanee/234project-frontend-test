@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="test all" time="27" tests="1" failures="0" errors="0">
+   <testsuite name="test all" tests="1" failures="0" errors="0" time="27" timestamp="2018-05-13 14:37:55" hostname="chamn - DESKTOP-F3IDNQP" id="Test Suites/test all">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\chamn\\Desktop\\New folder\\234project-frontend-test\\Reports\\test all\\20180513_143752"/>
+         <property name="logFiles" value="C:\\Users\\chamn\\Desktop\\New folder\\234project-frontend-test\\Reports\\test all\\20180513_143752\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="chamn - DESKTOP-F3IDNQP"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.4.1.1"/>
+         <property name="browser" value="Chrome 66.0.3359.170"/>
+         <property name="hostAddress" value="10.0.75.1"/>
+         <property name="sessionId" value="4a58ab3840d95b43c29e5d4cfac8dd1f"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/admin login" classname="Test Cases/admin login" status="PASSED">
+         <system-out><![CDATA[2018-05-13 14:37:55 - [TEST_CASE][PASSED] - Test Cases/admin login: Test Cases/admin login
+
+2018-05-13 14:37:56 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-05-13 14:37:59 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-05-13 14:37:59 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://34.213.239.153:8088/' successfully
+
+2018-05-13 14:38:12 - [MESSAGE][PASSED] - Navigate to 'http://34.213.239.153:8088/' successfully
+
+2018-05-13 14:38:12 - [TEST_STEP][PASSED] - setText: Text 'admin' is set on object 'Object Repository/Page_ProjectBackend (1)/input_username'
+
+2018-05-13 14:38:13 - [MESSAGE][PASSED] - Text 'admin' is set on object 'Object Repository/Page_ProjectBackend (1)/input_username'
+
+2018-05-13 14:38:13 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-05-13 14:38:15 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-05-13 14:38:15 - [TEST_STEP][PASSED] - setText: Text 'admin' is set on object 'Object Repository/Page_ProjectBackend (1)/input_password'
+
+2018-05-13 14:38:15 - [MESSAGE][PASSED] - Text 'admin' is set on object 'Object Repository/Page_ProjectBackend (1)/input_password'
+
+2018-05-13 14:38:15 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-05-13 14:38:17 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-05-13 14:38:17 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_ProjectBackend (1)/button_Login' is clicked on
+
+2018-05-13 14:38:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_ProjectBackend (1)/button_Login' is clicked on
+
+2018-05-13 14:38:17 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/Page_ProjectBackend (1)/a_Products' are matched.
+
+2018-05-13 14:38:18 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_ProjectBackend (1)/a_Products' are matched.
+
+2018-05-13 14:38:18 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-05-13 14:38:20 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-05-13 14:38:20 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/Page_ProjectBackend (1)/a_Total Transaction' are matched.
+
+2018-05-13 14:38:20 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_ProjectBackend (1)/a_Total Transaction' are matched.
+
+2018-05-13 14:38:20 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-05-13 14:38:22 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-05-13 14:38:22 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-05-13 14:38:23 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-05-13 14:37:55 - [TEST_SUITE][PASSED] - test all: Test Cases/admin login]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

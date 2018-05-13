@@ -1,0 +1,5 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+test all,,,2018-05-13 14:36:47,2018-05-13 14:36:49,2.061s,FAILED
+,,,,,,
+Test Cases/admin login,,,2018-05-13 14:36:47,2018-05-13 14:36:48,1.388s,FAILED
+openBrowser,,,2018-05-13 14:36:48,2018-05-13 14:36:48,0.763s,FAILED
